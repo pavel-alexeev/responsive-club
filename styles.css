@@ -192,7 +192,17 @@ body {
   line-height: 1.1;
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 768px) {
+  .day {
+    width: 32%;
+  }
+
+  .schedule-timetables {
+    min-width: 80%;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
   .schedule-timetables {
     width: 60%;
   }
