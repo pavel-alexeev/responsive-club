@@ -27,7 +27,7 @@ body {
   justify-content: center;
   margin: 0 auto;
   column-gap: 2em;
-  padding-top: 1em;
+  padding-top: 2em;
   /* padding-right: 20rem; */
 }
 
@@ -65,6 +65,7 @@ body {
 
 .quote {
   font-family: "Dancing Script", cursive;
+  width: 80%;
   font-size: 2.5rem;
   position: relative;
   top: 65%;
@@ -315,6 +316,36 @@ body {
   }
 }
 
+@media only screen and (max-width: 450px) {
+  .grid {
+    grid-template-columns: 100%;
+    grid-auto-rows: 15rem;
+    margin: 0 auto;
+  }
+
+  .one {
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 1;
+  }
+
+  .two {
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 1;
+  }
+
+  .three {
+    grid-row: 3 / span 1;
+    grid-column: 1 / span 1;
+  }
+
+  .four,
+  .five,
+  .six,
+  .seven {
+    display: none;
+  }
+}
+
 /* Contact  */
 
 #contact {
@@ -367,7 +398,9 @@ body {
   width: 2.5rem;
 }
 
-.info p {
+.info p,
+.info a {
+  width: 60%;
   font-size: 1.5rem;
 }
 
