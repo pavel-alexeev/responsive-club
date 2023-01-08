@@ -249,7 +249,14 @@
           <a href="#">Derby Yoga Club</a>
         </div>
         <div class="footer-div copyright">
-          <p>©2023 Pavels Aleksejevs All Rights Reserved</p>
+          <p>©Pavels Aleksejevs All Rights Reserved</p>
+          <span id="copyright">
+            <script>
+              document
+                .getElementById("copyright")
+                .appendChild(document.createTextNode(new Date().getFullYear()));
+            </script>
+          </span>
         </div>
       </div>
     </footer>
